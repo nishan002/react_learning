@@ -1,0 +1,7 @@
+Parent Child Render 
+
+When a parent component renders, React will recursively render all of its child components.
+
+New state same as old state after initial render ? Both parent and child component will not re-render. 
+
+New state same as old state after re-render ? Parent will re-render but child will not re-render. It will declined in the commit phase 
