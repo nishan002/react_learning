@@ -1,0 +1,5 @@
+State Immutability and Render 
+
+Mutating an object or an array as state will not cause re-render when used with the useState and useReducer 
+
+To re-render, make a copy of the existing state, modify as necessary and pass the new state to the setter function or while returning from a reducer function
