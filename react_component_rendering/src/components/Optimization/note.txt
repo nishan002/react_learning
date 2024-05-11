@@ -17,3 +17,12 @@ To optimize this behavious, you can use React.memo and pass in the Child compone
 
 React.memo will perform a shallow comparison of the previous and new props and re-render the child only if he props have changed.
 
+
+
+Incorrect optimization of React.memo
+
+1. if Child component has its own children components.
+
+2. if changes on the state of the Parent Component need to show in the Child Component
+
+3. If there is any object, array or function it will always create new reference while Parent component re-render. 
